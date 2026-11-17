@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wifi-audit"
+version = "1.0.0"
+description = "Аудит собственной Wi-Fi/локальной сети: открытые порты, устройства, кто подключён, отчёт по безопасности, защита от DDoS"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "DDOS-WiFi contributors" }]
+keywords = ["wifi", "security", "port-scanner", "network-audit", "ddos-protection"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.scripts]
+wifi-audit = "wifi_audit.cli:main"
+
+[tool.setuptools]
+packages = ["wifi_audit"]
