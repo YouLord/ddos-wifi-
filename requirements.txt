@@ -1,0 +1,7 @@
+# Зависимости НЕ нужны: wifi-audit работает только на стандартной библиотеке
+# Python 3.8+ (socket, subprocess, concurrent.futures, ipaddress и т.д.).
+#
+# Установка:
+#   git clone https://github.com/YouLord/ddos-wifi-.git
+#   cd ddos-wifi-
+#   python -m wifi_audit
